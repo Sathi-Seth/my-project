@@ -38,4 +38,12 @@ taskList.addEventListener('click' , (el) => {
     }
 }) ;
 
+taskList.addEventListener('click', (el) => {
+    if(el.target.classList.contains("finishBtn")){
+        let li = el.target.parentElement ;
+        li.style.color = "green";       
+    }
+});
+
+
 
